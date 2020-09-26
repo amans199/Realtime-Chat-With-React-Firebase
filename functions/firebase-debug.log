@@ -1,0 +1,49 @@
+[debug] [2020-09-26T05:39:50.425Z] ----------------------------------------------------------------------
+[debug] [2020-09-26T05:39:50.430Z] Command:       C:\laragon\bin\nodejs\node-v12\node.exe C:\laragon\bin\nodejs\node-v12\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-09-26T05:39:50.432Z] CLI Version:   8.11.2
+[debug] [2020-09-26T05:39:50.432Z] Platform:      win32
+[debug] [2020-09-26T05:39:50.432Z] Node Version:  v12.5.0
+[debug] [2020-09-26T05:39:50.440Z] Time:          Sat Sep 26 2020 07:39:50 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-09-26T05:39:50.440Z] ----------------------------------------------------------------------
+[debug] [2020-09-26T05:39:50.440Z] 
+[debug] [2020-09-26T05:39:50.511Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-26T05:39:50.512Z] > authorizing via signed-in user
+[debug] [2020-09-26T05:39:50.513Z] [iam] checking project superchat-63070 for permissions ["firebase.projects.get"]
+[debug] [2020-09-26T05:39:50.520Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-09-26T05:39:50.521Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-09-26T05:39:50.942Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Sep 2020 05:39:39 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-26T05:39:50.965Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-63070:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-09-26T05:39:52.013Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Sep 2020 05:39:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=675","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "10" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"12\""}}
+[debug] [2020-09-26T05:39:54.051Z] defaultcredentials: writing to file C:\Users\vip\AppData\Roaming\firebase\ahmed_ouda1997_gmail.com_application_default_credentials.json
+[debug] [2020-09-26T05:39:54.064Z] DEBUG: Setting GAC to C:\Users\vip\AppData\Roaming\firebase\ahmed_ouda1997_gmail.com_application_default_credentials.json
+[debug] [2020-09-26T05:39:54.085Z] [functions] Watching "C:\study-projects\superchat\functions" for Cloud Functions...
+[debug] [2020-09-26T05:39:54.119Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-09-26T05:39:54.119Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-09-26T05:39:54.119Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-09-26T05:39:54.120Z] DEBUG: [worker-~diagnostic~-341bbce5-5ccf-44df-a35b-50911a7f6133]: Assigning socketPath: \\?\pipe\C:\study-projects\superchat\functions\2944
+[debug] [2020-09-26T05:39:54.121Z] DEBUG: [worker-~diagnostic~-341bbce5-5ccf-44df-a35b-50911a7f6133]: BUSY
+[debug] [2020-09-26T05:39:55.251Z] DEBUG: [runtime-status] [2944] Functions runtime initialized. {"cwd":"C:\\study-projects\\superchat\\functions","node_version":"12.5.0"}
+[debug] [2020-09-26T05:39:55.254Z] DEBUG: [runtime-status] [2944] Disabled runtime features: undefined
+[debug] [2020-09-26T05:39:55.276Z] DEBUG: [runtime-status] [2944] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\study-projects\\superchat\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-09-26T05:39:55.295Z] DEBUG: [runtime-status] [2944] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\study-projects\\superchat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-26T05:39:55.297Z] DEBUG: [runtime-status] [2944] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\study-projects\\superchat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-26T05:39:55.304Z] DEBUG: [runtime-status] [2944] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-09-26T05:39:55.305Z] DEBUG: [runtime-status] [2944] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\study-projects\\superchat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-26T05:39:56.152Z] DEBUG: [runtime-status] [2944] Checked functions.config() {"config":{}}
+[debug] [2020-09-26T05:39:56.153Z] DEBUG: [runtime-status] [2944] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\study-projects\\superchat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-09-26T05:39:56.154Z] DEBUG: [runtime-status] [2944] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\study-projects\\superchat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-26T05:39:56.157Z] DEBUG: [runtime-status] [2944] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\study-projects\\superchat\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-09-26T05:39:56.158Z] DEBUG: [runtime-status] [2944] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\study-projects\\superchat\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-26T05:39:56.159Z] DEBUG: [runtime-status] [2944] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\study-projects\\superchat\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-09-26T05:39:56.267Z] DEBUG: [runtime-status] [2944] initializeApp(DEFAULT) {"databaseURL":"https://superchat-63070.firebaseio.com","storageBucket":"superchat-63070.appspot.com","projectId":"superchat-63070"}
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2020-09-26T05:40:02.652Z] [functions[detectEvilUsers]] function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions: Loaded functions: detectEvilUsers 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub 
+[debug] [2020-09-26T05:40:02.707Z] DEBUG: [worker-~diagnostic~-341bbce5-5ccf-44df-a35b-50911a7f6133]: IDLE
+[debug] [2020-09-26T05:40:07.099Z] [functions] Stopping Functions Emulator
+[debug] [2020-09-26T05:40:07.125Z] DEBUG: [worker-~diagnostic~-341bbce5-5ccf-44df-a35b-50911a7f6133]: exited
+[debug] [2020-09-26T05:40:07.125Z] DEBUG: [worker-~diagnostic~-341bbce5-5ccf-44df-a35b-50911a7f6133]: FINISHED
